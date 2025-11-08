@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitheesh VP | Graphic Designer</title>
+    <style>
+        /* ---- General Styles ---- */
+        body {
+            margin: 0;
+            font-family: 'Helvetica', Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+        a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+        header, section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+
+        /* ---- Header / Hero ---- */
+        header {
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        header h2 {
+            font-weight: 400;
+            font-size: 1.5em;
+            color: #1abc9c;
+        }
+        header button {
+            margin-top: 20px;
+            padding: 10px 25px;
+            font-size: 1em;
+            border: 2px solid #1abc9c;
+            background: transparent;
+            color: #1abc9c;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        header button:hover {
+            background-color: #1abc9c;
+            color: #121212;
+        }
+
+        /* ---- Projects Section ---- */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .project-card {
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            transition: 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .project-card h3 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        /* ---- About Section ---- */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .skill {
+            background-color: #1abc9c;
+            color: #121212;
+            padding: 5px 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        /* ---- Contact Section ---- */
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* ---- Footer ---- */
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        /* ---- Responsive ---- */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+            header h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <h1>Nitheesh VP</h1>
+        <h2>Graphic Designer | Video Editing | Illustrations | Photo Editing</h2>
+        <p>With 2 years of experience creating impactful visuals for top brands in Bangalore. Currently looking for freelance opportunities.</p>
+        <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })">Contact Me</button>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Nagarjuna</h3>
+                <p>Branding & Visual Design</p>
+            </div>
+            <div class="project-card">
+                <h3>Nakshathra</h3>
+                <p>Illustrations & Social Media Campaign</p>
+            </div>
+            <div class="project-card">
+                <h3>Nandus</h3>
+                <p>Video Editing & Photo Enhancement</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I’m Nitheesh VP, a Graphic Designer with 2 years of experience in video editing, illustrations, and photo editing. I’ve worked with top brands in Bangalore to create visuals that communicate effectively. Passionate about clean and modern design.</p>
+        <h3>Skills & Tools</h3>
+        <div class="skills">
+            <div class="skill">Photoshop</div>
+            <div class="skill">Illustrator</div>
+            <div class="skill">Figma</div>
+            <div class="skill">Video Editing</div>
+            <div class="skill">Photo Retouching</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you’d like to work together, feel free to reach out:</p>
+        <div class="contact">
+            <a href="mailto:vpnithinitheesh@gmail.com">vpnithinitheesh@gmail.com</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Nitheesh VP. All rights reserved.
+    </footer>
+
+</body>
+</html>
